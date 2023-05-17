@@ -1,7 +1,8 @@
+import { SkillProps } from "@/components/content/skills/Skill";
 import { createContext, useState } from "react";
 
 export interface SkillContextProps {
-  selectedSkill: any
+  selectedSkill: SkillProps | null
   setSelectedSkill: (props: any) => void
 }
 

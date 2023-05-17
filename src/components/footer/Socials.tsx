@@ -4,12 +4,12 @@ import linkedin from '../../../public/linkedin.svg'
 
 function renderSocials() {
   const items: SocialItemProps[] = [
-    { image: github, alt: "github" },
-    { image: linkedin, alt: "LinkedIn" },
+    { image: github, alt: "github", link: 'https://github.com/AlexandreContee' },
+    { image: linkedin, alt: "LinkedIn", link: 'https://www.linkedin.com/in/alexandreconteprog/' },
   ]
 
   return items.map((item, index) => (
-    <SocialItem key={`${item.alt}-${index}`} alt={item.alt} image={item.image} />
+    <SocialItem key={`${item.alt}-${index}`} alt={item.alt} image={item.image} link={item.link} />
   ))
 }
 

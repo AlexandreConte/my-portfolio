@@ -8,7 +8,7 @@ export default function ShowSkill() {
   const { selectedSkill } = useContext(SkillContext)
 
   type DescriptionType = "A JavaScript library for building user interfaces." | "The React Framework for the Web." | "A CSS framework packed with classes that can be composed to build any design." | "A strongly typed programming language that builds on JavaScript."
-  let description: DescriptionType | null
+  let description: DescriptionType
 
   switch (selectedSkill?.title) {
     case 'ReactJs':
@@ -23,31 +23,37 @@ export default function ShowSkill() {
       description = "A CSS framework packed with classes that can be composed to build any design."
       break;
 
-    case 'Typescript':
-      description = "A strongly typed programming language that builds on JavaScript."
-      break;
-
     default:
-      description = null
+      description = "A strongly typed programming language that builds on JavaScript."
       break;
   }
 
   const [state, setState] = useState<string>('')
 
   useEffect(() => {
-    function write(description: string) {
-      setState('')
-      if (description.length < 0) return
-      for (let i = 0; i < description.length; i++) {
-        setState(state + description[i])
-      }
+    function write(delay: number) {
+      if (description === null) return
+
+      let currentIndex = 0
+      const length = description.length
+      const interval = setInterval(() => {
+        if (currentIndex <= length) {
+          setState(description.slice(0, currentIndex))
+          currentIndex++
+        }
+        else {
+          clearInterval(interval)
+        }
+      }, delay)
+
+      return () => clearInterval(interval)
     }
 
-    write(description ?? '')
+    write(25)
   }, [description])
 
   return (
-    <Area>
+    <Area className="h-56">
       {selectedSkill?.title ? (
         <div className="text-2xl py-10 flex flex-col items-center gap-10 sm:flex-row">
           <Image
