@@ -1,6 +1,6 @@
 import SocialItem, { SocialItemProps } from "./SocialItem";
-import github from '../../../public/github.svg'
-import linkedin from '../../../public/linkedin.svg'
+import github from '/public/github.svg'
+import linkedin from '/public/linkedin.svg'
 
 function renderSocials() {
   const items: SocialItemProps[] = [

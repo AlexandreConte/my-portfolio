@@ -1,5 +1,5 @@
 import Area from "@/components/shared/Area";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import SkillContext from "./SkillContext";
 import Image from "next/image";
 
@@ -28,40 +28,16 @@ export default function ShowSkill() {
       break;
   }
 
-  const [state, setState] = useState<string>('')
-
-  useEffect(() => {
-    function write(delay: number) {
-      if (description === null) return
-
-      let currentIndex = 0
-      const length = description.length
-      const interval = setInterval(() => {
-        if (currentIndex <= length) {
-          setState(description.slice(0, currentIndex))
-          currentIndex++
-        }
-        else {
-          clearInterval(interval)
-        }
-      }, delay)
-
-      return () => clearInterval(interval)
-    }
-
-    write(25)
-  }, [description])
-
   return (
-    <Area className="h-56">
+    <Area>
       {selectedSkill?.title ? (
-        <div className="text-2xl py-10 flex flex-col items-center gap-10 sm:flex-row">
+        <div className="flex flex-col items-center py-6 text-xl gap-8 md:flex-row justify-center min-h-[200px]">
           <Image
             src={selectedSkill.image}
             alt={selectedSkill.title}
             height={130}
           />
-          <p>{state}</p>
+          <p className="text-center">{description}</p>
         </div>
       ) : null}
     </Area>

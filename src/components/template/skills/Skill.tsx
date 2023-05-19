@@ -21,7 +21,7 @@ export default function Skill(props: SkillProps) {
           src={props.image}
           alt={props.title}
         />
-        <span className="flex justify-center">{props.title}</span>
+        <div className="flex justify-center">{props.title}</div>
       </div>
     </div>
   )

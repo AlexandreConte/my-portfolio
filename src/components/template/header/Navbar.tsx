@@ -1,11 +1,9 @@
 import NavbarItem, { NavbarItemProps } from "./NavbarItem";
-import github from '../../../public/github.svg'
-import linkedin from '../../../public/linkedin.svg'
 
 function renderItems() {
   const items: NavbarItemProps[] = [
-    { children: "Github", image: github, link: 'https://www.github.com/AlexandreContee' },
-    { children: "LinkedIn", image: linkedin, link: 'https://www.linkedin.com/in/alexandreconteprog/' },
+    { children: "Projects", link: '#projects' },
+    { children: "Contac Me", link: '#contact-me' },
   ]
 
   return (

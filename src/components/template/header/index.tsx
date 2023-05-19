@@ -1,4 +1,4 @@
-import Area from "../shared/Area"
+import Area from "@/components/shared/Area"
 
 interface HeaderProps {
   children: any
@@ -9,7 +9,7 @@ export default function Header(props: HeaderProps) {
     <Area
       className={`
         flex justify-center items-center
-        bg-black p-7 
+        bg-black p-7 lg:p-9
       `}
     >
       <div
