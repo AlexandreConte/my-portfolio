@@ -10,6 +10,7 @@ export default function Page(props: PageProps) {
         flex flex-col min-h-screen
         text-zinc-50 
         bg-gradient-to-r from-zinc-900 via-black to-zinc-900 ${props.className ?? ''}
+        font-bold
     `}>
       {props.children}
     </div>

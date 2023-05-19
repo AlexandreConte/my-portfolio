@@ -13,12 +13,12 @@ export default function Hello(props: HelloProps) {
   return (
     <Area>
       <Title className="text-center p-7">{props.welcomeTitle}</Title>
-      <div className="flex flex-row max-w-full flex-wrap-reverse items-center justify-center">
-        <div className="pb-5 min-sm:pb-0">
-          <Title className="text-center">{props.presentation}</Title>
-          <Title className="text-center">{props.studying}</Title>
-        </div>
+      <div className="flex items-center justify-center flex-wrap text-center">
         <Image src={profile} alt="profile" className={`w-auto`} />
+        <div>
+          <Title className="font-medium">{props.presentation}</Title>
+          <Title className="font-medium">{props.studying}</Title>
+        </div>
       </div>
     </Area>
   )

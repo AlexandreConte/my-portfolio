@@ -1,14 +1,17 @@
 import NavbarItem, { NavbarItemProps } from "./NavbarItem";
+import {
+  IconCodeDots,
+} from '@tabler/icons-react'
 
 function renderItems() {
   const items: NavbarItemProps[] = [
-    { children: "Projects", link: '#projects' },
-    { children: "Contac Me", link: '#contact-me' },
+    { children: "Projects", link: '#projects', image: <IconCodeDots size={20} /> },
+    { children: "Contac Me", link: '#contact-me', alwaysActive: true },
   ]
 
   return (
     items.map(item => (
-      <NavbarItem key={item.children} image={item.image} link={item.link}>{item.children}</NavbarItem>)
+      <NavbarItem key={item.children} className={!item.alwaysActive ? "hidden lg:flex" : ""} image={item.image} link={item.link}>{item.children}</NavbarItem>)
     )
   )
 }

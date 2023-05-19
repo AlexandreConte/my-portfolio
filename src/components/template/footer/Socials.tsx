@@ -1,11 +1,13 @@
 import SocialItem, { SocialItemProps } from "./SocialItem";
-import github from '/public/github.svg'
-import linkedin from '/public/linkedin.svg'
+import {
+  IconBrandGithub,
+  IconBrandLinkedin
+} from "@tabler/icons-react"
 
 function renderSocials() {
   const items: SocialItemProps[] = [
-    { image: github, alt: "github", link: 'https://github.com/AlexandreContee' },
-    { image: linkedin, alt: "LinkedIn", link: 'https://www.linkedin.com/in/alexandreconteprog/' },
+    { image: <IconBrandGithub />, alt: "github", link: 'https://github.com/AlexandreContee' },
+    { image: <IconBrandLinkedin />, alt: "LinkedIn", link: 'https://www.linkedin.com/in/alexandreconteprog/' },
   ]
 
   return items.map((item, index) => (

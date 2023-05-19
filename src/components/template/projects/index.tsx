@@ -16,7 +16,7 @@ export default function Projects() {
   }
 
   return (
-    <div>
+    <div id="projects">
       {renderProjects()}
     </div>
   )

@@ -12,7 +12,7 @@ export default function Intro() {
       <div className="bg-black/70">
         <Hello
           welcomeTitle="Hello!👋🏼"
-          presentation="I'm Alexandre!"
+          presentation="I'm Alexandre,"
           studying="Currently studying Systems Analysis and Development"
         />
       </div>

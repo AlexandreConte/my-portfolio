@@ -1,4 +1,4 @@
-import Image from "next/image"
+import React from "react"
 
 export interface SocialItemProps {
   image: any
@@ -8,13 +8,10 @@ export interface SocialItemProps {
 
 export default function SocialItem(props: SocialItemProps) {
   return (
-    <a href={props.link}>
-      <Image
-        width={40}
-        alt={props.alt}
-        src={props.image}
-        className={`lg:w-12`}
-      />
+    <a href={props.link} className="hover:scale-110 transition-transform" target="_blank">
+      {React.cloneElement(props.image, {
+        size: 48
+      })}
     </a>
   )
 }
