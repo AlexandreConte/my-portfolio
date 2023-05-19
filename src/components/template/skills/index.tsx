@@ -3,17 +3,19 @@ import Skill, { SkillProps } from "./Skill"
 import Title from "../../shared/Title"
 
 // Images
-import reactjs from '/public/skills/reactjs.svg'
-import nextjs from '/public/skills/nextjs.svg'
-import tailwind from '/public/skills/tailwind.svg'
-import typescript from '/public/skills/typescript.svg'
+import {
+  IconBrandReact,
+  IconBrandNextjs,
+  IconBrandTailwind,
+  IconBrandTypescript
+} from "@tabler/icons-react"
 
 function renderSkills() {
   const skills: Omit<SkillProps, 'description'>[] = [
-    { title: 'ReactJs', image: reactjs },
-    { title: 'NextJs', image: nextjs },
-    { title: 'TailwindCSS', image: tailwind },
-    { title: 'Typescript', image: typescript },
+    { title: 'ReactJs', image: <IconBrandReact /> },
+    { title: 'NextJs', image: <IconBrandNextjs /> },
+    { title: 'TailwindCSS', image: <IconBrandTailwind /> },
+    { title: 'Typescript', image: <IconBrandTypescript /> },
   ]
 
   return skills.map(skill => (

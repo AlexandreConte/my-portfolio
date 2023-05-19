@@ -1,7 +1,6 @@
 import Area from "@/components/shared/Area";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import SkillContext from "./SkillContext";
-import Image from "next/image";
 
 export default function ShowSkill() {
 
@@ -32,11 +31,11 @@ export default function ShowSkill() {
     <Area>
       {selectedSkill?.title ? (
         <div className="flex flex-col items-center py-6 text-xl gap-8 md:flex-row justify-center min-h-[200px]">
-          <Image
-            src={selectedSkill.image}
-            alt={selectedSkill.title}
-            height={130}
-          />
+          {selectedSkill?.image ? (
+            React.cloneElement(selectedSkill.image, {
+              size: 130
+            })
+          ) : null}
           <p className="text-center">{description}</p>
         </div>
       ) : null}

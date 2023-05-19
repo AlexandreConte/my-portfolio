@@ -1,6 +1,5 @@
 import SkillContext from "@/components/data/contexts/SkillContext"
-import Image from "next/image"
-import { useContext } from "react"
+import React, { useContext } from "react"
 
 export interface SkillProps {
   title: string
@@ -16,11 +15,11 @@ export default function Skill(props: SkillProps) {
       onClick={() => setSelectedSkill(props)}
     >
       <div className="flex flex-col items-center gap-4 cursor-pointer">
-        <Image
-          height={60}
-          src={props.image}
-          alt={props.title}
-        />
+        {props.image ? (
+          React.cloneElement(props.image, {
+            size: 60,
+          })
+        ) : null}
         <div className="flex justify-center">{props.title}</div>
       </div>
     </div>

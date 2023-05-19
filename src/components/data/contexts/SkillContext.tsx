@@ -1,4 +1,4 @@
-import reactImage from '/public/skills/reactjs.svg'
+import { IconBrandReact } from "@tabler/icons-react"
 import { SkillProps } from "@/components/template/skills/Skill";
 import { createContext, useState } from "react";
 
@@ -7,7 +7,7 @@ export interface SkillContextProps {
   setSelectedSkill: (props: any) => void
 }
 
-const initialState = { "title": "ReactJs", image: reactImage }
+const initialState = { "title": "ReactJs", image: <IconBrandReact size={80} /> }
 
 const SkillContext = createContext<SkillContextProps>({
   selectedSkill: initialState,
