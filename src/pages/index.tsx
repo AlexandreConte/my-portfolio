@@ -14,10 +14,14 @@ import Courses from "@/components/template/courses";
 import Projects from "@/components/template/projects";
 
 export default function Home() {
+
+  const googleSiteVerification = process.env.GOOGLE_SITE_VERIFICATION
+
   return (
     <>
       <Head>
         <title>Alexandre Portfolio</title>
+        <meta name="google-site-verification" content={googleSiteVerification} />
         <meta name="description" content="Full Stack Developer Portfolio" />
         <link rel="icon" type="image/svg" href="/favicon.svg" />
       </Head>
