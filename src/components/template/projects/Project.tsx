@@ -21,11 +21,11 @@ export default function Project(props: ProjectProps) {
       <div className="flex flex-col gap-2">
         <h4 className="text-xl">{props.title}</h4>
         <div className="flex flex-col">
-          <Link href={props.repoLink} className="underline flex gap-1 items-center">
+          <Link href={props.repoLink} className="underline flex gap-1 items-center" target="_blank">
             <IconArrowBadgeRightFilled size={28} />
             Code Repository
           </Link>
-          <Link href={props.accessLink} className="underline flex gap-1 items-center">
+          <Link href={props.accessLink} className="underline flex gap-1 items-center" target="_blank">
             <IconArrowBadgeRightFilled size={28} />
             Project Access
           </Link>
