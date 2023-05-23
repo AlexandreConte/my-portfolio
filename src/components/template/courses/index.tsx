@@ -61,6 +61,10 @@ const courses: CourseProps[] = [
         projectLink: "https://github.com/AlexandreContee/Staart-front-end-project",
         projectName: "Front End Final Project"
       },
+      {
+        projectLink: "https://github.com/AlexandreContee/react-social-network",
+        projectName: "Front End Social Network"
+      },
     ],
   },
 ]

@@ -25,7 +25,7 @@ export default function Project(props: ProjectProps) {
             <IconArrowBadgeRightFilled size={28} />
             Code Repository
           </Link>
-          <Link href={props.repoLink} className="underline flex gap-1 items-center">
+          <Link href={props.accessLink} className="underline flex gap-1 items-center">
             <IconArrowBadgeRightFilled size={28} />
             Project Access
           </Link>

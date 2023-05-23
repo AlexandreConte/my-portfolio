@@ -2,7 +2,12 @@ import Area from "@/components/shared/Area"
 import Project, { ProjectProps } from "./Project"
 
 // Icons
-import { IconCalculator } from "@tabler/icons-react"
+import {
+  IconCalculator,
+  IconListCheck,
+  IconUserSearch,
+  IconDoor
+} from "@tabler/icons-react"
 
 export default function Projects() {
 
@@ -12,6 +17,24 @@ export default function Projects() {
       accessLink: 'https://alexandre-calculadora.vercel.app/',
       title: 'Calculator (React.Js)',
       image: <IconCalculator />,
+    },
+    {
+      repoLink: "https://github.com/AlexandreContee/Monty-hall",
+      accessLink: 'https://monty-hall-alexandre-conte.vercel.app/',
+      title: 'Next.Js Monty Hall',
+      image: <IconDoor />
+    },
+    {
+      repoLink: 'https://github.com/AlexandreContee/Gerenciador-Tarefas',
+      accessLink: 'https://task-manager-alexandre.vercel.app/',
+      title: 'To Do App (React.Js)',
+      image: <IconListCheck />
+    },
+    {
+      repoLink: "https://github.com/AlexandreContee/GitFind",
+      accessLink: 'http://git-find-jet.vercel.app/',
+      title: 'React GitFind',
+      image: <IconUserSearch />
     },
   ]
 
