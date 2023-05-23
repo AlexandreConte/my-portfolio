@@ -43,10 +43,10 @@ export default function Course(props: CourseProps) {
             props.project.map(p => (
               <div key={p.projectLink} className="flex flex-col">
                 <Link
-                  className="underline ml-2 mr-auto flex"
+                  className="underline ml-2 mr-auto flex items-center"
                   target="_blank"
                   href={p.projectLink}>
-                  <IconArrowBadgeRightFilled /> {p.projectName}
+                  <IconArrowBadgeRightFilled size={28} /> {p.projectName}
                 </Link>
               </div>
             ))

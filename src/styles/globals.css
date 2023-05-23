@@ -14,3 +14,16 @@ html {
 img::selection {
   background-color: #ffffff30;
 }
+
+
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}

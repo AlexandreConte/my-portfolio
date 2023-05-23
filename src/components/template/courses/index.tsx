@@ -26,6 +26,20 @@ const courses: CourseProps[] = [
     imageAlt: "OneBitCode Logo",
     initialDate: "Mar 2023",
     finishDate: "",
+    project: [
+      {
+        projectName: "Space X",
+        projectLink: "https://github.com/AlexandreContee/spaceX"
+      },
+      {
+        projectName: 'JavaScript Calculator',
+        projectLink: 'https://github.com/AlexandreContee/CalcJs'
+      },
+      {
+        projectName: 'Tic Tac Toe',
+        projectLink: 'https://github.com/AlexandreContee/TicTacToe'
+      },
+    ]
   },
   {
     courseTitle: 'Meta',

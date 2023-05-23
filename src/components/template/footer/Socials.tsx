@@ -1,13 +1,15 @@
 import SocialItem, { SocialItemProps } from "./SocialItem";
 import {
   IconBrandGithub,
-  IconBrandLinkedin
+  IconBrandLinkedin,
+  IconBrandGmail
 } from "@tabler/icons-react"
 
 function renderSocials() {
   const items: SocialItemProps[] = [
     { image: <IconBrandGithub />, alt: "github", link: 'https://github.com/AlexandreContee' },
     { image: <IconBrandLinkedin />, alt: "LinkedIn", link: 'https://www.linkedin.com/in/alexandreconteprog/' },
+    { image: <IconBrandGmail />, alt: "Gmail", link: "mailto:alexandreconte.dev@gmail.com" },
   ]
 
   return items.map((item, index) => (
@@ -17,7 +19,7 @@ function renderSocials() {
 
 export default function Socials() {
   return (
-    <div className="flex gap-8">
+    <div className="flex gap-8 flex-wrap justify-center">
       {renderSocials()}
     </div>
   )
