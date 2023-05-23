@@ -20,7 +20,7 @@ export default function Skill(props: SkillProps) {
             size: 60,
           })
         ) : null}
-        <div className="flex justify-center">{props.title}</div>
+        <h2 className="flex justify-center items-center font-bold text-lg">{props.title}</h2>
       </div>
     </div>
   )

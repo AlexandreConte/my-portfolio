@@ -8,13 +8,15 @@ interface LogoProps {
 
 export default function Logo(props: LogoProps) {
   return (
-    <Link className="flex gap-3 pr-2" href="/">
-      <Image
-        alt="Logo"
-        src={logo}
-        width={40}
-      />
-      <h1 className="hidden sm:flex text-xl">Alexandre Conte</h1>
+    <Link href="/">
+      <h1 className="flex gap-3 pr-2">
+        <Image
+          alt="Alexandre Conte Full Stack Developer Logo"
+          src={logo}
+          width={40}
+        />
+        <span className="hidden sm:flex text-xl">Alexandre Conte</span>
+      </h1>
     </Link>
   )
 }

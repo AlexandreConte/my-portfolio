@@ -1,6 +1,5 @@
 import Area from "@/components/shared/Area"
 import Skill, { SkillProps } from "./Skill"
-import Title from "../../shared/Title"
 
 // Images
 import {
@@ -14,8 +13,8 @@ function renderSkills() {
   const skills: Omit<SkillProps, 'description'>[] = [
     { title: 'ReactJs', image: <IconBrandReact /> },
     { title: 'NextJs', image: <IconBrandNextjs /> },
-    { title: 'TailwindCSS', image: <IconBrandTailwind /> },
     { title: 'Typescript', image: <IconBrandTypescript /> },
+    { title: 'TailwindCSS', image: <IconBrandTailwind /> },
   ]
 
   return skills.map(skill => (
@@ -27,9 +26,9 @@ export default function Skills() {
   return (
     <div id="#skills">
       <Area>
-        <Title className="text-2xl text-center pt-12 pb-5">My Core Skills</Title>
+        <h2 className="text-2xl text-center mt-8 py-12">My Core Skills</h2>
         <div className="flex gap-7 flex-wrap justify-evenly py-14">{renderSkills()}</div>
-        <p className="text-center text-zinc-600 py-2">Click on a skill to show an expanded description.</p>
+        <p className="text-center text-zinc-500 py-2 font-normal">Click on a skill to show an expanded description below.</p>
       </Area>
     </div>
   )

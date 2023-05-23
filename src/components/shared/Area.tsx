@@ -14,7 +14,7 @@ export default function Area(props: AreaProps) {
       <div
         className={`
           px-7 2xl:px-0
-          w-full 2xl:w-[1480px]
+          w-full xl:w-[1280px]
         `}
       >
         {props.children}

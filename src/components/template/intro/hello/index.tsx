@@ -12,7 +12,7 @@ interface HelloProps {
 export default function Hello(props: HelloProps) {
   return (
     <Area>
-      <Title className="text-center p-7">{props.welcomeTitle}</Title>
+      <Title className="text-center p-7 font-medium">{props.welcomeTitle}</Title>
       <div className="flex items-center justify-center flex-wrap text-center">
         <Image src={profile} alt="profile" className={`w-auto`} />
         <div>

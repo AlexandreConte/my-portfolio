@@ -30,7 +30,7 @@ export default function ShowSkill() {
   return (
     <Area>
       {selectedSkill?.title ? (
-        <div className="flex flex-col items-center py-6 text-xl gap-8 md:flex-row justify-center min-h-[200px]">
+        <div className="flex flex-col items-center py-16 text-xl gap-8 md:flex-row justify-center min-h-[200px]">
           {selectedSkill?.image ? (
             React.cloneElement(selectedSkill.image, {
               size: 130

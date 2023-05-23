@@ -9,14 +9,16 @@ import Logo from "@/components/template/header/Logo";
 import Navbar from "@/components/template/header/Navbar";
 import Intro from "@/components/template/intro";
 import Skills from "@/components/template/skills";
+import Experiences from "@/components/template/experiences";
+import Courses from "@/components/template/courses";
 import Projects from "@/components/template/projects";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Alexandre | Developer Portfolio</title>
-        <meta name="description" content="Full Stack Developer | Next Js" />
+        <title>Alexandre Portfolio</title>
+        <meta name="description" content="Full Stack Developer Portfolio" />
         <link rel="icon" type="image/svg" href="/favicon.svg" />
       </Head>
       <Page>
@@ -27,6 +29,8 @@ export default function Home() {
         <Intro />
         <Skills />
         <ShowSkill />
+        <Courses />
+        <Experiences />
         <Projects />
         <Footer>
           <Socials />
