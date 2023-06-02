@@ -5,7 +5,7 @@ export default function Intro() {
   return (
     <div
       className={`
-        bg-[url('/background1.jpg')]
+        bg-[url('/background/bg1.jpg')]
         bg-fixed
         bg-center
         bg-cover

@@ -1,7 +1,9 @@
 import Title from "../../../shared/Title";
-import profile from "/public/me.png"
 import Area from "@/components/shared/Area";
 import Image from "next/image";
+
+// Image
+import profile from "/public/profile/ale.png"
 
 interface HelloProps {
   welcomeTitle: any
