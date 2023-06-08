@@ -7,8 +7,8 @@ import {
 
 function renderSocials() {
   const items: SocialItemProps[] = [
-    { image: <IconBrandGithub />, alt: "github", link: 'https://github.com/AlexandreContee' },
-    { image: <IconBrandLinkedin />, alt: "LinkedIn", link: 'https://www.linkedin.com/in/alexandreconteprog/' },
+    { image: <IconBrandGithub />, alt: "github", link: 'https://github.com/AlexandreConte' },
+    { image: <IconBrandLinkedin />, alt: "LinkedIn", link: 'https://www.linkedin.com/in/alexandrecontedev/' },
     { image: <IconBrandGmail />, alt: "Gmail", link: "mailto:alexandreconte.dev@gmail.com" },
   ]
 

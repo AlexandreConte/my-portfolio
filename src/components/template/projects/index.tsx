@@ -13,25 +13,25 @@ export default function Projects() {
 
   const projects: ProjectProps[] = [
     {
-      repoLink: 'https://github.com/AlexandreContee/Calculadora-React',
+      repoLink: 'https://github.com/AlexandreConte/Calculadora-React',
       accessLink: 'https://alexandre-calculadora.vercel.app/',
       title: 'Calculator (React.Js)',
       image: <IconCalculator />,
     },
     {
-      repoLink: "https://github.com/AlexandreContee/Monty-hall",
+      repoLink: "https://github.com/AlexandreConte/Monty-hall",
       accessLink: 'https://monty-hall-alexandre-conte.vercel.app/',
       title: 'Next.Js Monty Hall',
       image: <IconDoor />
     },
     {
-      repoLink: 'https://github.com/AlexandreContee/Gerenciador-Tarefas',
+      repoLink: 'https://github.com/AlexandreConte/Gerenciador-Tarefas',
       accessLink: 'https://task-manager-alexandre.vercel.app/',
       title: 'To Do App (React.Js)',
       image: <IconListCheck />
     },
     {
-      repoLink: "https://github.com/AlexandreContee/GitFind",
+      repoLink: "https://github.com/AlexandreConte/GitFind",
       accessLink: 'http://git-find-jet.vercel.app/',
       title: 'React GitFind',
       image: <IconUserSearch />
