@@ -2,8 +2,8 @@ import Area from "@/components/shared/Area";
 import Title from "@/components/shared/Title";
 
 // Images
-import portfolio from "/public/cases/portfolio.png"
-import staart from "/public/cases/staart.png"
+import portfolio from "/public/cases/portfolio.webp"
+import staart from "/public/cases/staart.webp"
 
 // Projects Data
 import Case, { CaseProps } from "./Case";

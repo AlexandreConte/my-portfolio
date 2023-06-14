@@ -3,7 +3,7 @@ import Area from "@/components/shared/Area";
 import Image from "next/image";
 
 // Image
-import profile from "/public/profile/ale.png"
+import profile from "/public/profile/ale.webp"
 
 interface HelloProps {
   title1: string

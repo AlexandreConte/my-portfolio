@@ -6,7 +6,7 @@ export default function Intro() {
     <div
       className={`
         mt-[101px]
-        bg-[url('/background/bg1.jpg')]
+        bg-[url('/background/bg1.avif')]
         bg-fixed
         bg-center
         bg-cover
