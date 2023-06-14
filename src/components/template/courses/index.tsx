@@ -8,7 +8,14 @@ import staart from '/public/courses/staart.jpeg'
 import meta from '/public/courses/meta.jpeg'
 
 // Icons 
-import { IconChevronsUp } from '@tabler/icons-react'
+import {
+  IconChevronsUp,
+  IconRocket,
+  IconCalculator,
+  IconTicTac,
+  IconSchool,
+  IconSocial
+} from '@tabler/icons-react'
 
 const courses: CourseProps[] = [
   {
@@ -28,16 +35,23 @@ const courses: CourseProps[] = [
     finishDate: "",
     project: [
       {
+        projectImage: <IconRocket />,
         projectName: "Space X",
-        projectLink: "https://github.com/AlexandreContee/spaceX"
+        projectLink: "https://alexandre-spacex-project.netlify.app/",
+        projectRepository: "https://github.com/AlexandreConte/spaceX",
       },
       {
+        projectImage: <IconCalculator />,
         projectName: 'Calculadora JavaScript',
-        projectLink: 'https://github.com/AlexandreContee/CalcJs'
+        projectLink: "https://alexandreconte.github.io/CalcJs/",
+        projectRepository: 'https://github.com/AlexandreConte/CalcJs',
+
       },
       {
+        projectImage: <IconTicTac />,
         projectName: 'Jogo da velha',
-        projectLink: 'https://github.com/AlexandreContee/TicTacToe'
+        projectLink: "https://alexandreconte.github.io/TicTacToe/",
+        projectRepository: 'https://github.com/AlexandreConte/TicTacToe',
       },
     ]
   },
@@ -58,12 +72,16 @@ const courses: CourseProps[] = [
     finishDate: "Maio/2023",
     project: [
       {
-        projectLink: "https://github.com/AlexandreContee/Staart-front-end-project",
-        projectName: "Projeto final de frontend"
+        projectImage: <IconSchool />,
+        projectName: "ProSchool",
+        projectLink: "https://staart-front-end-project.vercel.app/",
+        projectRepository: "https://github.com/AlexandreContee/Staart-front-end-project",
       },
       {
-        projectLink: "https://github.com/AlexandreContee/react-social-network",
-        projectName: "Frontend de uma rede social"
+        projectImage: <IconSocial />,
+        projectName: "Frontend de uma rede social",
+        projectLink: "https://react-social-network-alexandre.vercel.app/",
+        projectRepository: "https://github.com/AlexandreContee/react-social-network",
       },
     ],
   },

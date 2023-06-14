@@ -1,3 +1,4 @@
+import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -5,8 +6,10 @@ import Link from "next/link"
 import { IconArrowBadgeRightFilled } from '@tabler/icons-react'
 
 type Project = {
+  projectImage: any
   projectName: string
   projectLink: string
+  projectRepository: string
 }
 
 export interface CourseProps {
@@ -41,13 +44,27 @@ export default function Course(props: CourseProps) {
           <h3 className="text-xl font-normal">{props.courseAreaOfStudy}</h3>
           {props.project ? (
             props.project.map(p => (
-              <div key={p.projectLink} className="flex flex-col">
-                <Link
-                  className="underline ml-2 mr-auto flex items-center"
-                  target="_blank"
-                  href={p.projectLink}>
-                  <IconArrowBadgeRightFilled size={28} /> {p.projectName}
-                </Link>
+              <div key={p.projectLink} className="flex flex-col my-4">
+                <div>
+                  <h2>{p.projectName}</h2>
+                </div>
+                <div className="flex">
+                  <div>{React.cloneElement(p.projectImage, { size: 56 })}</div>
+                  <div>
+                    <Link
+                      className="underline ml-2 mr-auto flex items-center"
+                      target="_blank"
+                      href={p.projectLink}>
+                      <IconArrowBadgeRightFilled size={28} /> Acesso ao projeto
+                    </Link>
+                    <Link
+                      className="underline ml-2 mr-auto flex items-center"
+                      target="_blank"
+                      href={p.projectRepository}>
+                      <IconArrowBadgeRightFilled size={28} /> Acesso ao código
+                    </Link>
+                  </div>
+                </div>
               </div>
             ))
           )
