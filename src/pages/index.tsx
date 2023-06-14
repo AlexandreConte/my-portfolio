@@ -12,6 +12,9 @@ import Skills from "@/components/template/skills";
 import Experiences from "@/components/template/experiences";
 import Courses from "@/components/template/courses";
 import Projects from "@/components/template/projects";
+import StudyCases from "@/components/template/studyCases";
+import ArrowUp from "@/components/template/arrowUp";
+import Graduation from "@/components/template/formation";
 
 export default function Home() {
 
@@ -22,7 +25,7 @@ export default function Home() {
       <Head>
         <title>Alexandre Portfolio</title>
         <meta name="google-site-verification" content={googleSiteVerification} />
-        <meta name="description" content="Full Stack Developer Portfolio" />
+        <meta name="description" content="Frontend Developer Portfolio" />
         <link rel="icon" type="image/svg" href="/favicon.svg" />
       </Head>
       <Page>
@@ -31,15 +34,18 @@ export default function Home() {
           <Navbar />
         </Header>
         <Intro />
+        <StudyCases />
         <Skills />
         <ShowSkill />
-        <Courses />
+        <Graduation />
         <Experiences />
+        <Courses />
         <Projects />
         <Footer>
           <Socials />
           <Copyright />
         </Footer>
+        <ArrowUp />
       </Page>
     </>
   )

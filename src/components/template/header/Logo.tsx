@@ -9,11 +9,12 @@ interface LogoProps {
 export default function Logo(props: LogoProps) {
   return (
     <Link href="/">
-      <h1 className="flex gap-3 pr-2">
+      <h1 className="flex gap-3 p-2">
         <Image
-          alt="Alexandre Conte Full Stack Developer Logo"
+          alt="Alexandre Conte React Developer Logo"
           src={logo}
           width={40}
+          height={40}
         />
         <span className="hidden sm:flex text-xl">Alexandre Conte</span>
       </h1>

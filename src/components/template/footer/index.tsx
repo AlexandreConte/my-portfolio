@@ -8,7 +8,7 @@ export default function Footer(props: FooterProps) {
   return (
     <div id="contact-me">
       <Area
-        className="bg-black"
+        className="bg-white"
       >
         <div
           className="flex flex-col justify-center items-center sm:flex-row sm:justify-between gap-6 p-7 xl:px-0"

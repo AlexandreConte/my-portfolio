@@ -13,18 +13,18 @@ import { IconChevronsUp } from '@tabler/icons-react'
 const courses: CourseProps[] = [
   {
     courseTitle: 'Cod3r',
-    courseAreaOfStudy: "Full Stack Web Development",
+    courseAreaOfStudy: "Desenvolvimento web fullstack",
     image: cod3r,
     imageAlt: "Cod3r Logo",
-    initialDate: "May 2023",
+    initialDate: "Maio/2023",
     finishDate: "",
   },
   {
     courseTitle: 'OneBitCode',
-    courseAreaOfStudy: "Full Stack Development",
+    courseAreaOfStudy: "Desenvolvimento fullstack",
     image: onebitcode,
     imageAlt: "OneBitCode Logo",
-    initialDate: "Mar 2023",
+    initialDate: "Março/2023",
     finishDate: "",
     project: [
       {
@@ -32,11 +32,11 @@ const courses: CourseProps[] = [
         projectLink: "https://github.com/AlexandreContee/spaceX"
       },
       {
-        projectName: 'JavaScript Calculator',
+        projectName: 'Calculadora JavaScript',
         projectLink: 'https://github.com/AlexandreContee/CalcJs'
       },
       {
-        projectName: 'Tic Tac Toe',
+        projectName: 'Jogo da velha',
         projectLink: 'https://github.com/AlexandreContee/TicTacToe'
       },
     ]
@@ -46,24 +46,24 @@ const courses: CourseProps[] = [
     courseAreaOfStudy: "Front End Web Development",
     image: meta,
     imageAlt: 'Meta Logo',
-    initialDate: 'Dec 2022',
-    finishDate: 'Jan 2023',
+    initialDate: 'Dezembro/2022',
+    finishDate: 'Janeiro/2023',
   },
   {
     courseTitle: 'Staart',
-    courseAreaOfStudy: "Full Stack Web Development",
+    courseAreaOfStudy: "Desenvolvimento web full stack",
     image: staart,
     imageAlt: "Staart Logo",
-    initialDate: "May 2022",
-    finishDate: "May 2023",
+    initialDate: "Maio/2022",
+    finishDate: "Maio/2023",
     project: [
       {
         projectLink: "https://github.com/AlexandreContee/Staart-front-end-project",
-        projectName: "Front End Final Project"
+        projectName: "Projeto final de frontend"
       },
       {
         projectLink: "https://github.com/AlexandreContee/react-social-network",
-        projectName: "Front End Social Network"
+        projectName: "Frontend de uma rede social"
       },
     ],
   },
@@ -103,9 +103,9 @@ export default function Courses() {
   return (
     <Area>
       <div className="flex flex-col gap-12 my-10">
-        <h3 className="text-center text-2xl">Main Courses</h3>
+        <h3 className="text-center text-2xl">Cursos</h3>
         <div className="flex justify-center">
-          <div className="border-l-2 border-zinc-50"></div>
+          <div className="border-l-2 border-black"></div>
           <div className="min-w-full">
             {renderAllCourses()}
           </div>

@@ -34,8 +34,8 @@ export default function Course(props: CourseProps) {
             />
             <h3 className="text-2xl font-medium">{props.courseTitle}</h3>
           </div>
-          <hr className="flex-1 mx-4 border-zinc-600" />
-          <h3 className="text-xl font-light text-zinc-400">{props.initialDate ?? null} {props.finishDate ? `to ${props.finishDate}` : "- Now"}</h3>
+          <hr className="flex-1 mx-4 border-black" />
+          <h3 className="text-xl font-light text-zinc-800">{props.initialDate ?? null} {props.finishDate ? `a ${props.finishDate}` : "- Agora"}</h3>
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="text-xl font-normal">{props.courseAreaOfStudy}</h3>

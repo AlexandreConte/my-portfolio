@@ -6,24 +6,29 @@ export default function ShowSkill() {
 
   const { selectedSkill } = useContext(SkillContext)
 
-  type DescriptionType = "A JavaScript library for building user interfaces." | "The React Framework for the Web." | "A CSS framework packed with classes that can be composed to build any design." | "A strongly typed programming language that builds on JavaScript."
+  type DescriptionType =
+    "Uma biblioteca frontend JavaScript de código aberto com foco em criar interfaces de usuário."
+    | "Um framework de desenvolvimento frontend React de código aberto que permite funcionalidades extras."
+    | "Um superconjunto sintático estrito de JavaScript que adiciona tipagem estática opcional à linguagem."
+    | "Um framework CSS baseado em classes, que podem ser compostas para criar qualquer design."
+
   let description: DescriptionType
 
   switch (selectedSkill?.title) {
     case 'ReactJs':
-      description = "A JavaScript library for building user interfaces."
+      description = "Uma biblioteca frontend JavaScript de código aberto com foco em criar interfaces de usuário."
       break;
 
     case 'NextJs':
-      description = "The React Framework for the Web."
+      description = "Um framework de desenvolvimento frontend React de código aberto que permite funcionalidades extras."
       break;
 
     case 'TailwindCSS':
-      description = "A CSS framework packed with classes that can be composed to build any design."
+      description = "Um framework CSS baseado em classes, que podem ser compostas para criar qualquer design."
       break;
 
     default:
-      description = "A strongly typed programming language that builds on JavaScript."
+      description = "Um superconjunto sintático estrito de JavaScript que adiciona tipagem estática opcional à linguagem."
       break;
   }
 
@@ -33,7 +38,7 @@ export default function ShowSkill() {
         <div className="flex flex-col items-center py-16 text-xl gap-8 md:flex-row justify-center min-h-[200px]">
           {selectedSkill?.image ? (
             React.cloneElement(selectedSkill.image, {
-              size: 130
+              size: 130,
             })
           ) : null}
           <p className="text-center">{description}</p>

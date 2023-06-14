@@ -9,7 +9,9 @@ export default function Header(props: HeaderProps) {
     <Area
       className={`
         flex justify-center items-center
-        bg-black py-7 lg:py-9
+        bg-[#ffffffd0] py-7
+        fixed min-w-full
+        z-100 backdrop-blur-sm
       `}
     >
       <div

@@ -6,7 +6,7 @@ import NavbarItem, { NavbarItemProps } from "./NavbarItem";
 function renderItems() {
   const items: NavbarItemProps[] = [
     // { children: "Projects", link: '#projects', image: <IconCodeDots size={20} /> },
-    { children: "Contac Me", link: '#contact-me', alwaysActive: true },
+    { children: "Contato", link: '#contact-me', alwaysActive: true },
   ]
 
   return (

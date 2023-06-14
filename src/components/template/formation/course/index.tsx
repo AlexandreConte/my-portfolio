@@ -1,16 +1,15 @@
-import Image from "next/image"
+import Image from "next/image";
 
-export interface ExperienceProps {
-  companyTitle: string
-  companyDescription: string
-  activitiesDescription: string
-  initialDate: string
-  finishDate: string
+export interface FormationCourseProps {
   image: any
   imageAlt: string
+  courseTitle: string
+  company: string
+  initialDate: string
+  finishDate: string
 }
 
-export default function Experience(props: ExperienceProps) {
+export default function FormationCourse(props: FormationCourseProps) {
   return (
     <div className="py-14 min-w-full">
       <div className="ml-5">
@@ -23,13 +22,14 @@ export default function Experience(props: ExperienceProps) {
               width={80}
               height={80}
             />
-            <h3 className="text-2xl font-medium">{props.companyTitle}</h3>
+            <h3 className="text-2xl font-medium">{props.company}</h3>
           </div>
           <hr className="flex-1 mx-4 border-black" />
           <h3 className="text-xl font-light text-zinc-800">{props.initialDate ?? null} {props.finishDate ? `a ${props.finishDate}` : "- Agora"}</h3>
         </div>
-        <h3 className="text-xl font-normal">{props.companyDescription}</h3>
-        <h3 className="text-lg font-normal">{props.activitiesDescription}</h3>
+        <div>
+          <h3 className="text-xl font-normal">{props.courseTitle}</h3>
+        </div>
       </div>
     </div>
   )

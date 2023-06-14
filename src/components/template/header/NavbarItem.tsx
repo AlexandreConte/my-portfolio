@@ -9,7 +9,7 @@ export interface NavbarItemProps {
 export default function NavbarItem(props: NavbarItemProps) {
   return (
 
-    <a href={props.link} className={`flex items-center gap-1 border-b border-transparent hover:border-zinc-50 transition-colors text-lg ${props.className}`}>
+    <a href={props.link} className={`flex items-center gap-1 border-b border-transparent hover:border-zinc-900 transition-colors text-lg ${props.className}`}>
       {
         props.image ? (
           props.image

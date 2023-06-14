@@ -10,10 +10,10 @@ import { IconChevronsUp } from '@tabler/icons-react'
 const exps: ExperienceProps[] = [
   {
     companyTitle: "Pixel (UFSC)",
-    companyDescription: "The Junior Company of Universidade Federal de Santa Catarina (Brazil)",
-    activitiesDescription: "Training with JavaScript, React Native, Git and Github",
-    initialDate: "Mar 22",
-    finishDate: "Jun 22",
+    companyDescription: "Empresa júnior da Universidade Federal de Santa Catarina.",
+    activitiesDescription: "Treinamento de JavaScript, React Native, Git e Github.",
+    initialDate: "Março/2022",
+    finishDate: "Junho/2022",
     image: pixel,
     imageAlt: "Pixel Logo"
   }
@@ -54,9 +54,9 @@ export default function Experiences() {
   return (
     <Area>
       <div className="flex flex-col gap-12 my-10 pt-4">
-        <h3 className="text-center text-2xl">Experiences</h3>
+        <h3 className="text-center text-2xl">Experiências</h3>
         <div className="flex justify-center">
-          <div className="border-l-2 border-zinc-50"></div>
+          <div className="border-l-2 border-black"></div>
           <div className="min-w-full">
             {renderAllExperiences()}
           </div>

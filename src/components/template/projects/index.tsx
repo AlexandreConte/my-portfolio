@@ -13,16 +13,16 @@ export default function Projects() {
 
   const projects: ProjectProps[] = [
     {
-      repoLink: 'https://github.com/AlexandreConte/Calculadora-React',
-      accessLink: 'https://alexandre-calculadora.vercel.app/',
-      title: 'Calculator (React.Js)',
-      image: <IconCalculator />,
-    },
-    {
       repoLink: "https://github.com/AlexandreConte/Monty-hall",
       accessLink: 'https://monty-hall-alexandre-conte.vercel.app/',
       title: 'Next.Js Monty Hall',
       image: <IconDoor />
+    },
+    {
+      repoLink: 'https://github.com/AlexandreConte/Calculadora-React',
+      accessLink: 'https://alexandre-calculadora.vercel.app/',
+      title: 'Calculator (React.Js)',
+      image: <IconCalculator />,
     },
     {
       repoLink: 'https://github.com/AlexandreConte/Gerenciador-Tarefas',
@@ -53,7 +53,7 @@ export default function Projects() {
   return (
     <div id="projects">
       <Area className="my-10">
-        <h4 className="text-center text-2xl m-10">Hobby Projects</h4>
+        <h4 className="text-center text-2xl m-10">Projetos feitos para praticar</h4>
         <div className="flex gap-10 flex-wrap">
           {renderProjects()}
         </div>

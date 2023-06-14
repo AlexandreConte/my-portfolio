@@ -26,9 +26,9 @@ export default function Skills() {
   return (
     <div id="#skills">
       <Area>
-        <h2 className="text-2xl text-center mt-8 py-12">My Core Skills</h2>
+        <h2 className="text-2xl text-center mt-8 py-12">Principais Tecnologias</h2>
         <div className="flex gap-7 flex-wrap justify-evenly py-14">{renderSkills()}</div>
-        <p className="text-center text-zinc-500 py-2 font-normal">Click on a skill to show an expanded description below.</p>
+        <p className="text-center text-zinc-500 py-2 font-normal">Clique em uma tecnologia para mostrar sua descrição.</p>
       </Area>
     </div>
   )

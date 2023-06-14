@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 *::selection {
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: rgb(104, 104, 255);
 }
 
 html {
@@ -12,18 +12,18 @@ html {
 }
 
 img::selection {
-  background-color: #ffffff30;
+  background-color: transparent;
 }
 
 
 body::-webkit-scrollbar {
-  width: 14px;
+  width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #000;
+  background: #ddd;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #fff;
+  background-color: #6e6e6e;
 }
