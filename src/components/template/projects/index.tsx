@@ -15,25 +15,25 @@ export default function Projects() {
     {
       repoLink: "https://github.com/AlexandreConte/Monty-hall",
       accessLink: 'https://monty-hall-alexandre-conte.vercel.app/',
-      title: 'Next.Js Monty Hall',
+      title: 'NextJs: Monty Hall',
       image: <IconDoor />
     },
     {
       repoLink: 'https://github.com/AlexandreConte/Calculadora-React',
       accessLink: 'https://alexandre-calculadora.vercel.app/',
-      title: 'Calculator (React.Js)',
+      title: 'ReactJs: Calculadora',
       image: <IconCalculator />,
     },
     {
       repoLink: 'https://github.com/AlexandreConte/Gerenciador-Tarefas',
       accessLink: 'https://task-manager-alexandre.vercel.app/',
-      title: 'To Do App (React.Js)',
+      title: 'ReactJs: Controle de Tarefas',
       image: <IconListCheck />
     },
     {
       repoLink: "https://github.com/AlexandreConte/GitFind",
       accessLink: 'http://git-find-jet.vercel.app/',
-      title: 'React GitFind',
+      title: 'ReactJs: GitFind',
       image: <IconUserSearch />
     },
   ]
@@ -54,7 +54,7 @@ export default function Projects() {
     <div id="projects">
       <Area className="my-10">
         <h4 className="text-center text-2xl m-10">Projetos feitos para praticar</h4>
-        <div className="flex gap-10 flex-wrap">
+        <div className="flex gap-10 flex-wrap justify-center">
           {renderProjects()}
         </div>
       </Area>

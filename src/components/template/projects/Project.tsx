@@ -19,7 +19,7 @@ export default function Project(props: ProjectProps) {
       )
         : null}
       <div className="flex flex-col gap-2">
-        <h4 className="text-xl">{props.title}</h4>
+        <h4 className="text-xl text-center">{props.title}</h4>
         <div className="flex flex-col">
           <Link href={props.repoLink} className="underline flex gap-1 items-center" target="_blank">
             <IconArrowBadgeRightFilled size={28} />
