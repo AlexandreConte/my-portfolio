@@ -7,10 +7,17 @@ Este projeto é uma web aplicação feita com Next Js (o framework do React Js, 
 
 ## 💻 Como rodar esse projeto
 Para rodar o projeto, deve executar no terminal do seus sistema operacional, dentro da pasta do projeto, o comando:
-```bash
+```
+npm i
+```
+
+Em seguida:
+```
 npm run dev
 ```
-Uma vez que o projeto esteja rodando, você pode acessá-lo através de http://localhost:3000/
+
+## 🖥️ Será necessário ter instalado em sua máquina:
+- Node
 
 ## ⚙️ Tecnologias usadas no projeto
 ![NextJs](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
@@ -42,5 +49,5 @@ A pasta styles possui apenas o arquivo globals.css, de maneira a chamar o Tailwi
 
 -----
 <p align="center">
-  Feito com ☕ por Alexandre
+  Feito com ☕ por Alexandre Conte
 </p>
